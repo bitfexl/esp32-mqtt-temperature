@@ -1,0 +1,19 @@
+// wifi config
+#define WIFI_HOSTNAME "esp32_temp_sense"
+#define WIFI_SSID "SSID"
+#define WIFI_PSK "PSK"
+
+#define MQTT_SERV "192.168.x.xx"
+#define MQTT_SERV_PORT 1883
+#define MQTT_ID "" // can be empty
+#define MQTT_USER "esp32" // can be empty
+#define MQTT_PASS "1234" // can be empty
+
+// topic
+#define MQTT_T_BASE "user/esp32/"
+
+// publish temperature and humidity message every second
+#define MQTT_T_PUB_DHT11 MQTT_T_BASE "dht11"
+
+// (led control) turn led off (0) and on (1); toggle (2);
+#define MQTT_T_SUB_LED MQTT_T_BASE "led"
